@@ -63,6 +63,7 @@ goaltica-demo/
     ├── utils.js
     └── theme.js
 
+```
 
 ---
 
@@ -74,7 +75,6 @@ LocalStorage for data
 Service Worker for offline support
 No dependencies, no build tools — just open and go!
 
-
 ---
 
 🧠 Roadmap
@@ -85,7 +85,6 @@ Data export / import
 Reminders or notifications
 Cloud sync (optional)
 
-
 ---
 
 📄 License
@@ -93,4 +92,3 @@ Cloud sync (optional)
 MIT License © 2025 Zafer Yilmaz - https://zaferyilmaz.dev
 
 ---
-```
