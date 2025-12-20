@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goaltica | Focus on What Matters</title>
+
+    <meta
+      name="description"
+      content="Goaltica is a minimal, offline goal manager that helps you set intentions, reflect on progress, and stay aligned with what truly matters — all stored privately on your device."
+    />
+    <meta name="theme-color" content="#1976d2" />
+
+    <!-- PWA Manifest & Favicon -->
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icons/g-icon-192.png" type="image/png" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header>
+      <h1>🏆 Goaltica</h1>
+      <p class="tagline">Plan simply. Grow steadily.</p>
+    </header>
+    <!-- ========== MAIN ========== -->
+    <main>
+      <!-- ---- Summary Section ---- -->
+      <section id="summary" aria-label="Summary overview"></section>
+
+      <!-- ---- Add / Edit Goal Form ---- -->
+      <section id="form-section">
+        <button id="toggle-form-btn" class="btn primary" type="button">
+          +
+        </button>
+
+        <form id="goal-form" autocomplete="off">
+          <!-- Title -->
+          <input
+            type="text"
+            id="goal-title"
+            name="goal-title"
+            placeholder="What would you like to achieve?"
+            required
+            minlength="3"
+            maxlength="100"
+          />
+
+          <!-- Text -->
+          <textarea
+            name="goal-description"
+            id="goal-description"
+            maxlength="1000"
+            placeholder="Write your thoughts, steps, or motivation…"
+          ></textarea>
+          <p id="char-counter" class="char-counter">0 / 1000</p>
+
+          <!-- Priority -->
+          <select id="priority">
+            <option value="high">🟥 High priority</option>
+            <option value="medium" selected>🟧 Medium priority</option>
+            <option value="low">🟨 Low priority</option>
+          </select>
+
+          <!-- Form buttons -->
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Add Goal</button>
+            <button
+              type="button"
+              id="cancel-edit"
+              class="btn secondary"
+              style="display: none"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- ---- Search Section ---- -->
+      <section id="search-section">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-bar"
+          placeholder="Search goals..."
+        />
+      </section>
+
+      <!-- ---- Goal List ---- -->
+      <section id="goal-list-section">
+        <h2>Your Goals</h2>
+
+        <ul id="goal-list"></ul>
+        <p id="empty-note" class="muted" style="text-align: center">
+          No goals yet — start your first one above!
+        </p>
+      </section>
+
+      <!-- ---- Settings ---- -->
+      <section id="settings-section">
+        <h3>Settings</h3>
+        <p>You can find some settings here to customize your experience.</p>
+        <button id="theme-toggle" class="btn secondary">🌓 Toggle Theme</button>
+        <button id="clear-data" class="btn danger">🗑️ Clear All Data</button>
+      </section>
+
+      <!-- ---- Floating Add Button ---- -->
+      <button id="fab-add" class="fab" title="Add new goal" type="button">
+        +
+      </button>
+    </main>
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <h3>🏆 Goaltica</h3>
+      <p>Set goals. Nurture progress. Stay motivated — privately, offline.</p>
+      <p>Made with ❤️ by <strong>Zafer Yilmaz</strong>.</p>
+      <p>
+        ☕ Like this project?
+        <a
+          href="https://buymeacoffee.com/zaferyilmaz"
+          target="_blank"
+          rel="noopener"
+          >Buy me a coffee</a
+        >.
+      </p>
+      <p class="other-projects">
+        ✨ Explore my other projects:
+        <a href="#" target="_blank" rel="noopener"> DueWatcher </a>
+      </p>
+      <p class="footer-meta">
+        &copy; 2025
+        <a href="https://zaferyilmaz.dev" target="_blank" rel="noopener"
+          >Zafer Yilmaz</a
+        >
+        · All rights reserved. Goaltica demo v.1.
+      </p>
+      <p class="privacy-note">
+        🔒 Goaltica stores your data locally in your browser — nothing is shared
+        or collected.
+      </p>
+    </footer>
+
+    <!-- Script -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
