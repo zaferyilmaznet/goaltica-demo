@@ -27,6 +27,7 @@ No accounts, no cloud sync — just your goals stored securely in your browser.
 ```bash
 git clone https://github.com/zaferyilmaznet/goaltica-demo.git
 cd goaltica
+```
 
 2. Open the app
 
@@ -35,9 +36,8 @@ For full PWA functionality (like offline caching), you can also serve locally:
 
 npx serve .
 
-
 Then visit http://localhost:3000
- (or the port shown).
+(or the port shown).
 
 ---
 
@@ -49,19 +49,19 @@ goaltica-demo/
 ├── manifest.json
 ├── service-worker.js
 ├── icons/
-│   ├── icon-72.png
-│   ├── icon-96.png
-│   ├── icon-192.png
-│   └── icon-512.png
+│ ├── icon-72.png
+│ ├── icon-96.png
+│ ├── icon-192.png
+│ └── icon-512.png
 ├── css/
-│   └── main.css
+│ └── main.css
 └── js/
-    ├── app.js
-    ├── model.js
-    ├── storage.js
-    ├── ui.js
-    ├── utils.js
-    └── theme.js
+├── app.js
+├── model.js
+├── storage.js
+├── ui.js
+├── utils.js
+└── theme.js
 
 ```
 
@@ -92,3 +92,4 @@ Cloud sync (optional)
 MIT License © 2025 Zafer Yilmaz - https://zaferyilmaz.dev
 
 ---
+```
