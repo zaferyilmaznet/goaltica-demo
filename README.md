@@ -89,7 +89,7 @@ Cloud sync (optional)
 
 📄 License
 
-MIT License © 2025 Zafer Yilmaz - https://zaferyilmaz.dev
+MIT License © 2025 Zafer Yilmaz - https://zaferyilmaz.net
 
 ---
 ```
