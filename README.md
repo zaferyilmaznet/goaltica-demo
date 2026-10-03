@@ -86,10 +86,9 @@ Reminders or notifications
 Cloud sync (optional)
 
 ---
-
+```
 📄 License
 
 MIT License © 2025 Zafer Yilmaz - [zaferyilmaz.net](https://zaferyilmaz.net/)
 
 ---
-```
